@@ -1,0 +1,67 @@
+/* Style the header */
+.header {
+  padding: 100px;
+  height: calc(100vh - 200px);
+  text-align: center;
+  background-image: url("back.jpg");
+  background-color: #00ace6;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  padding: 40px;
+  font-size: 80px;
+  scroll-behavior: smooth;
+}
+
+/* Header Description text */
+.header p1{
+    font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  background-color: #c3f0ff;
+  width: 100%;
+  /* make padding 18*/
+  padding: 15px;
+  position: fixed;
+  display: block;
+  scroll-behavior: smooth;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:#1ba0dd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main column */
+.main {
+  background-color: black; /* White background color */
+  height: 2000px; /* Some padding */
+  scroll-behavior: smooth;
+}
