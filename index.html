@@ -7,36 +7,93 @@
 
   
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    html{
+      scroll-behavior: smooth;
+    }
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
+
+      animation: fadeInAnimation ease 2.5s; 
+      animation-iteration-count: 1; 
+      animation-fill-mode: forwards;
     }
+    @keyframes fadeInAnimation { 
+      0% { 
+        opacity: 0; 
+      } 
+      100% { 
+        opacity: 1; 
+      } 
+    } 
   </style>
 
 </head>
 
 <body>
-  <div class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Résumé</a>
-      <a href="#">Contact</a>
-      <!-- <a href="#" class="right">Link</a> -->
-  </div>
 
   <div class="header">
     <h1>Zaid Omer</h1>
     <p1>Computer Engineering Student</p1>
   </div>
 
-  <div class="row">
-    <div class="main">...</div>
+  <div class="projects_page" id="projects">
+    <p2>My Projects</p2>
   </div>
-  
-  <link rel="stylesheet" href="style.css">
-  <script src="scripts.js"></script>
+
+  <div class="resume_page" id="resume">
+    <p2>My Resume</p2>
+
+    <div class="resume_item">
+      <h2>Co-op Computer Engineering</h2>
+      <img src="calendar.png" class="calendar_icon">
+      <date>Sept 2019 - Present</date>
+      <description>I am currently in my first year of computer enginnering at The University of Waterloo, gaining experience with all aspects of computers - both software and hardware.</description>
+    </div>
+
+    <div class="resume_item" style="top: calc(235vh)">
+      <h2>Java</h2>
+      <img src="calendar.png" class="calendar_icon">
+      <date>Oct 2017 - Present</date>
+      <description>I have over 2 years of experience programming in Java starting from high school, learning functional programming, object oriented programing, arrays, data structures such as single and doubly linked lists, stacks, queues, binary trees, and more.</description>
+    </div>
+
+    <div class="resume_item" style="top: calc(262vh)">
+      <h2>C++</h2>
+      <img src="calendar.png" class="calendar_icon">
+      <date>Sept 2019 - Present</date>
+      <description>I have leared C++ by completing my programming course during my first semester at Waterloo. I learned the basics of recurssion, pointers, bitwise operators, classes, linked lists, and more.</description>
+    </div>
+
+    <a href="Zaid Omer Resume.pdf" download>
+      <button class="download_button"><i class="fa fa-download"></i> Download</button>
+    </a>
+
+    <img src="resume_picture.jpg" class="resume_pic">
+
+  </div>
+
+  <div class="contact_page" id="contact"></div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Résumé</a>
+    <a href="#contact">Contact</a>
+    <!-- <a href="#" class="right">Link</a> -->
+  </div>
+
+  <div class="footer">
+    <p>Stay Connected</p>
+  </div>
+
 </body>
 
 </html>
