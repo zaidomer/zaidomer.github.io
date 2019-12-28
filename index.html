@@ -11,7 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
   <script src="scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -85,20 +85,22 @@
     <p2>Contact Me</p2>
     <div class="form_group">
       <div class="form_background">
-        <form class="contact_form" action="form_processing.php" method="post">
+        <form class="contact_form" action="https://formspree.io/zaidomerone@gmail.com" method="POST">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="">
+          <input type="text" name="name" class="name" placeholder="">
   
           <label for="subject">Email</label>
-          <input type="text" id="email" name="email" placeholder="">
+          <input type="text" name="email" class="email" placeholder="">
   
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="">
+          <input type="text" name="subject" class="subject" placeholder="">
   
           <label for="subject">Message</label>
-          <textarea type="text" id="message" name="message" placeholder=""></textarea>
+          <textarea type="text" name="message" class="message" placeholder=""></textarea>
   
-          <input type="Submit" value="Submit">
+          <!-- <input type="Submit" value="Submit"> -->
+          <button type="submit" class="submit">Submit</button>
+          <p style="font-size:12px" id="form_status"></p>
   
         </form>
       </div>
