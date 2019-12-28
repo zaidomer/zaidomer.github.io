@@ -22,18 +22,36 @@
 
 .resume_page p2{
   position: absolute;
-  left: 50%;
-  top: calc(201vh);
+  width: 100%;
+  text-align: center;
+  top: calc(202vh);
   font-size: 30px;
   font-weight: bold;
 }
 
 .projects_page p2{
   position: absolute;
-  left: 50%;
-  top: calc(101vh);
+  width: 100%;
+  text-align: center;
+  top: calc(102vh);
   font-size: 30px;
   font-weight: bold;
+}
+
+.contact_page p2{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: calc(302vh);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact_page p3{
+  position: absolute;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .resume_item h2{
@@ -62,6 +80,15 @@
   color: rgb(68, 68, 68);
   font-size: 15px;
   line-height: 25px;
+}
+
+.footer h2{
+  position: absolute;
+  top: calc(400vh + 280px); 
+  font-weight: normal;
+  font-size: 13px;
+  width: 100%;
+
 }
 
 /* Style the top navigation bar */
@@ -116,7 +143,7 @@
 .contact_page{
   width: 100%;
   background-color: white;
-  height: calc(100vh);
+  height: calc(101vh);
 }
 
 .download_button {
@@ -173,12 +200,65 @@
   border-color: #1ba0dd;
 }
 
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 3px solid rgb(158, 158, 158);
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  resize: vertical;
+}
+
+input[type=text]:hover{
+  transition: 0.3s;
+  border: 3px solid #1ba0dd;
+}
+
+textarea:hover{
+  transition: 0.3s;
+  border: 3px solid #1ba0dd;
+}
+
+input[type=text]:focus {
+  transition: 0.3s;
+  border: 4px solid #1ba0dd;
+}
+
+textarea:focus{
+  transition: 0.3s;
+  border: 4px solid #1ba0dd;
+}
+
+input[type=submit]{
+  background-color: #c3f0ff;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  transition: 0.3s;
+  background-color: #1ba0dd;
+}
+
+.form_background{
+  width: calc(70vw);
+  background-color: rgb(248, 250, 255);
+  padding: 50px 20px;
+}
+
+.form_group{
+  background-color: white;
+  padding: 100px calc((30vw - 40px)/2);
+}
+
 .footer {
-  flex-direction: column; 
   color: white;
-  height: 290px; /* Some padding */
-  padding: 20px;
-  text-align: center; /* Center text*/
-  background: rgb(26, 26, 26); /* Grey background */
+  height: 290px; 
+  padding: 20px 0px;
+  text-align: center;
+  background: rgb(26, 26, 26);
   scroll-behavior: smooth;
 }
