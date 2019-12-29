@@ -254,6 +254,40 @@ button:hover{
   padding: 100px calc((30vw - 40px)/2);
 }
 
+.button_group{
+  background-color: rgb(26, 26, 26);
+  padding: 100px calc((95vw - 100px)/2);
+}
+
+.github_logo{
+  position:absolute;
+  top:calc(400vh + 145px);
+  width:50px;
+  height:50px;
+  left:calc(50vw);
+}
+
+.github_logo:hover{
+  transition: 0.2s;
+  width:53px;
+  height:53px;
+}
+
+.linkedin_logo{
+  left:calc(50vw - 75px);
+  position:absolute;
+  top:calc(400vh + 145px);
+  width:50px;
+  height:50px;
+}
+
+.linkedin_logo:hover{
+  transition: 0.2s;
+  width:53px;
+  height:53px;
+}
+
+
 .footer {
   color: white;
   height: 290px; 
