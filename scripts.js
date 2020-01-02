@@ -12,6 +12,27 @@ function scrollFunction() {
   } else {
     document.getElementsByClassName("navbar")[0].style.padding = "18px 20px";
   }
+
+  if (document.body.scrollTop > 0.87*screen.height || document.documentElement.scrollTop > 0.87*screen.height) {
+    var default_value = ["45px", "50px", "55px", "61px", "45px"];
+
+    for(var i = 0; i <=4; i++){
+      document.getElementsByClassName("language_circle")[i].style.width = "80px";
+      document.getElementsByClassName("language_circle")[i].style.height = "80px";
+
+      document.getElementsByClassName("language_image")[i].style.width = default_value[i];
+      document.getElementsByClassName("language_image")[i].style.height = default_value[i];
+    }
+  } else {
+    scrolled=true;
+    for(var i = 0; i <=4; i++){
+      document.getElementsByClassName("language_circle")[i].style.width = "0px";
+      document.getElementsByClassName("language_circle")[i].style.height = "0px";
+
+      document.getElementsByClassName("language_image")[i].style.width = "0px";
+      document.getElementsByClassName("language_image")[i].style.height = "0px";
+    }
+  }
 }
 
 $(document).ready(function (){
