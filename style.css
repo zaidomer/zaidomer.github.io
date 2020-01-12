@@ -160,7 +160,7 @@
   position: absolute;
   left: 40px;
   top: calc(108vh);
-}
+} 
 
 .project_item h2{
   top: calc((100vw/4 - 90px)/1.6667);
@@ -249,10 +249,13 @@
   color: black;
   padding: 12px 30px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.2vw;
   position: absolute;
-  right: 195px;
-  top: calc(208vh + 665px);
+  /* right: 195px; */
+  width:12%;
+  height:6%;
+  left: calc(74vw);
+  top: calc(208vh + 41vw);
 }
 
 .download_button:hover {
@@ -262,7 +265,10 @@
 
 .resume_pic {
   position: absolute;
-  right: 50px;
+  /* right: 50px; */
+  left: 65%; 
+  width:30%;
+  height:39vw;
   top: calc(208vh);
 }
 
@@ -284,10 +290,10 @@
   /*padding: 100px 250px;*/
   width: 50%;
   height: 25%;
-
   /*postioning*/
   position: absolute;
-  right: 700px;
+  /* right: 700px; */
+  left:5%;
   top: calc(208vh);
 
 }
