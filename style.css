@@ -392,8 +392,8 @@ button:hover{
 }
 
 .footer h2{
-  position: absolute;
-  top: calc(400vh + 280px);  
+  position: relative;
+  bottom: 20px; 
   font-weight: normal;
   font-size: 13px;
   width: 100%;
